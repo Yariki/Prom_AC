@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+  <modeltypes>
+    <type value="bis" />
+    <type value="bunker" />
+    <type value="damper" />
+    <type value="gate" />
+    <type value="graindryer" />
+    <type value="transporter" />
+  </modeltypes>
+  <!-- models section - here are all model in system-->
+  <models>
+    <model type="">
+      <core>
+        <id value="" name="" /> <!-- for Model Identity: value = GUID type; name = symbol type (attribute must be unique)  -->
+        <systemid value="" /> <!-- for Arduino identification: value = int type -->
+        <priority value="" />
+      </core>
+      <ui>
+        <uifilename value="" />
+        <coordinate x="" y="" />
+      </ui>
+    </model>
+  </models>
+  <!-- in this section gathered all relations between models - connection lines-->
+  <connections>
+    <connection>
+      <core>
+        <id value="" name="" />
+        <priority value="" />
+        <source value="" />
+        <destination value="" />
+      </core>
+      <ui>
+        <path>
+          <coordinate value="" />
+        </path>
+        <color value="" />
+      </ui>
+    </connection>
+  </connections>
+</project>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+  <modeltypes>
+    <type value="bis" />
+    <type value="bunker" />
+    <type value="damper" />
+    <type value="gate" />
+    <type value="graindryer" />
+    <type value="transporter" />
+  </modeltypes>
+  <!-- models section - here are all model in system-->
+  <models>
+    <model type="bis">
+      <core>
+        <id value="6FF6BBE8-554C-41E1-B066-AE19AE3A246C" name="Bis1" /> <!-- for Model Identity: value = GUID type; name = symbol type (attribute must be unique)  -->
+        <systemid value="1001" /> <!-- for Arduino identification: value = int type -->
+        <priority value="1" />
+      </core>
+      <ui>
+        <uifilename value="bis.svg" />
+        <position x="10" y="15" />
+        <size width="100" height="100" />
+      </ui>
+    </model>
+	  <model type="gate">
+      <core>
+        <id value="923A26B9-3CAA-4FBA-ADBF-27E7E67F5422" name="Gate1" /> <!-- for Model Identity: value = GUID type; name = symbol type (attribute must be unique)  -->
+        <systemid value="1002" /> <!-- for Arduino identification: value = int type -->
+        <priority value="2" />
+      </core>
+      <ui>
+        <uifilename value="valve.svg" />
+        <position x="250" y="20" />
+        <size width="100" height="100" />
+      </ui>
+    </model>
+    <model type="bis">
+      <core>
+        <id value="849C5844-179C-40BF-9B17-952711700C0D" name="Bis2" />
+        <!-- for Model Identity: value = GUID type; name = symbol type (attribute must be unique)  -->
+        <systemid value="1003" />
+        <!-- for Arduino identification: value = int type -->
+        <priority value="1" />
+      </core>
+      <ui>
+        <uifilename value="dryer.svg" />
+        <position x="10" y="200" />
+        <size width="100" height="100" />
+      </ui>
+    </model>
+  </models>
+  <!-- in this section gathered all relations between models - connection lines-->
+  <connections>
+    <connection>
+      <core>
+        <id value="978E4689-18DA-4C8D-BFAE-D757F91F6CCC" name="Connection1" />
+        <priority value="1" />
+        <source value="Bis1" />
+        <destination value="Gate1" />
+      </core>
+      <ui>
+        <polygon fill="none" stroke="#373435" stroke-width="2.08348" points="109,30 180,30 180,70 250,70"/>
+      </ui>
+    </connection>
+    <connection>
+      <core>
+        <id value="83C88990-9288-4ED9-A34D-D92459E80D84" name="Connection2" />
+        <priority value="1" />
+        <source value="Bis2" />
+        <destination value="Gate1" />
+      </core>
+      <ui>
+        <polygon fill="none" stroke="#373435" stroke-width="2.08348" points="109,230 180,230 180,125 250,125"/>
+      </ui>
+    </connection>
+  </connections>
+</project>

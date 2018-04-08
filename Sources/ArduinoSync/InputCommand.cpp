@@ -1,0 +1,9 @@
+///////////////////////////////////////////////////////////
+//  InputCommand.cpp
+//  Implementation of the Class InputCommand
+//  Created on:      30-Jul-2013 12:57:47 AM
+//  Original author: Yariki
+///////////////////////////////////////////////////////////
+
+#include "InputCommand.h"
+

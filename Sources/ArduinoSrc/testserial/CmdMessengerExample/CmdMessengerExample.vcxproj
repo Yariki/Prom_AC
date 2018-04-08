@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6B3BA33F-5F6A-49F9-A57D-4F92B1B954BE}</ProjectGuid>
+    <RootNamespace>CmdMessengerExample</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>H:\Visual\QT\arduino-1.0.5-windows\arduino-1.0.5\hardware\arduino\cores\arduino;H:\Visual\QT\arduino-1.0.5-windows\arduino-1.0.5\hardware\arduino\variants\mega;H:\Visual\QT\arduino-1.0.5-windows\arduino-1.0.5\libraries\CmdMessenger;H:\Visual\QT\arduino-1.0.5-windows\arduino-1.0.5\libraries\CmdMessenger\utility;H:\Visual\QT\arduino-1.0.5-windows\arduino-1.0.5\libraries\HashMap;H:\Visual\QT\arduino-1.0.5-windows\arduino-1.0.5\libraries\HashMap\utility;H:\Visual\QT\arduino-1.0.5-windows\arduino-1.0.5\libraries\base64;H:\Visual\QT\arduino-1.0.5-windows\arduino-1.0.5\libraries\base64\utility;H:\Visual\QT\arduino-1.0.5-windows\arduino-1.0.5\libraries\Streaming;H:\Visual\QT\arduino-1.0.5-windows\arduino-1.0.5\libraries\Streaming\utility;H:\Visual\QT\arduino-1.0.5-windows\arduino-1.0.5\libraries;H:\Visual\QT\arduino-1.0.5-windows\arduino-1.0.5\hardware\arduino\libraries;C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers;C:\Users\Yariki\Documents\Arduino\libraries;h:\visual\qt\arduino-1.0.5-windows\arduino-1.0.5\hardware\tools\avr\avr\include\;h:\visual\qt\arduino-1.0.5-windows\arduino-1.0.5\hardware\tools\avr\avr\include\avr\;h:\visual\qt\arduino-1.0.5-windows\arduino-1.0.5\hardware\tools\avr\avr\;h:\visual\qt\arduino-1.0.5-windows\arduino-1.0.5\hardware\tools\avr\lib\gcc\avr\4.3.2\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>Z:\Visual\QT\PromMarket\Sources\ArduinoSrc\testserial\CmdMessengerExample\Visual Micro\.CmdMessengerExample.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <PreprocessorDefinitions>__AVR_ATmega2560__;ARDUINO=105;ARDUINO_MAIN;__AVR__;__avr__;F_CPU=16000000L;__cplusplus;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="CmdMessengerExample.ino">
+      <FileType>CppCode</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="IndicatorProcessObject.h" />
+    <ClInclude Include="ObjectProcessInfo.h" />
+    <ClInclude Include="SignalProcessInfo.h" />
+    <ClInclude Include="Visual Micro\.CmdMessengerExample.vsarduino.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="IndicatorProcessObject.cpp" />
+    <ClCompile Include="ObjectProcessInfo.cpp" />
+    <ClCompile Include="SignalProcessInfo.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties arduino.board.name="mega2560" arduino.board.desc="Arduino Mega 2560 or Mega ADK" arduino.board.property_bag="name=Arduino Mega 2560 or Mega ADK&#xD;&#xA;upload.protocol=stk500v2&#xD;&#xA;upload.maximum_size=258048&#xD;&#xA;upload.speed=115200&#xD;&#xA;bootloader.low_fuses=0xFF&#xD;&#xA;bootloader.high_fuses=0xD8&#xD;&#xA;bootloader.extended_fuses=0xFD&#xD;&#xA;bootloader.path=stk500v2&#xD;&#xA;bootloader.file=stk500boot_v2_mega2560.hex&#xD;&#xA;bootloader.unlock_bits=0x3F&#xD;&#xA;bootloader.lock_bits=0x0F&#xD;&#xA;build.mcu=atmega2560&#xD;&#xA;build.f_cpu=16000000L&#xD;&#xA;build.core=arduino&#xD;&#xA;build.variant=mega&#xD;&#xA;runtime.ide.path=z:\Visual\QT\arduino-1.0.5-windows\arduino-1.0.5&#xD;&#xA;build.system.path=z:\Visual\QT\arduino-1.0.5-windows\arduino-1.0.5\hardware\arduino\system&#xD;&#xA;software=ARDUINO&#xD;&#xA;runtime.ide.version=105&#xD;&#xA;vm.core.include=arduino.h&#xD;&#xA;vm.boardsource.path=z:\Visual\QT\arduino-1.0.5-windows\arduino-1.0.5\hardware\arduino&#xD;&#xA;vm.boardsource.name=boards.txt&#xD;&#xA;vm.platformname.name=&#xD;&#xA;" arduino.build.mcu="atmega2560" arduino.build.f_cpu="16000000L" arduino.build.core="arduino" arduino.upload.protocol="stk500v2" arduino.upload.speed="115200" arduino.upload.maximum_size="258048" arduino.upload.port="COM4" VM.DebugVariablesWindow.ColumnVisibleBreakPointName="1" VM.DebugTextMessages.SerialWindow="1" VM.DebugTextMessages.TraceWindow="1" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

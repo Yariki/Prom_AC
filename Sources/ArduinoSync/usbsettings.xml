@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<portsettings>
+  <mode value="3"></mode><!--readwrite-->
+  <rate value="9600"></rate>
+  <databits value="8"></databits>
+  <parity value="0"></parity>
+  <stopbits value="1"></stopbits>
+  <flowcontrol value="0"></flowcontrol>
+  <port value="COM3"></port>
+</portsettings>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Creator: CorelDRAW X6 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="100px" height="100px" version="1.0" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+viewBox="0 0 100 100"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <rect fill="none" stroke="#2A2A29" stroke-width="0.500031" x="11" y="47" width="56.4998" height="37"/>
+  <rect fill="none" stroke="#2A2A29" stroke-width="0.500031" x="67" y="15" width="29.5001" height="68.5"/>
+  <line fill="none" stroke="#2A2A29" stroke-width="0.500031" x1="11" y1="47" x2="11" y2= "20" />
+  <polyline fill="none" stroke="#2A2A29" stroke-width="0.500031" points="15,20 15,42 67,46 "/>
+  <line fill="none" stroke="#2A2A29" stroke-width="0.500031" x1="11" y1="20" x2="3" y2= "12" />
+  <polyline fill="none" stroke="#2A2A29" stroke-width="0.500031" points="3,12 22,12 15,20 "/>
+ </g>
+</svg>
